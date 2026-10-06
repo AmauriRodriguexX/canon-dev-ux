@@ -80,12 +80,12 @@
 							{/each}
 						</dl>
 						{/if}
-						<div class="mt-auto flex flex-wrap gap-3 pt-7">
-							<button class="btn btn-primary" onclick={() => goToForm({ model: m.name, intent: 'quote', position: 'tarjeta' })}>
+						<div class="mt-auto flex flex-col gap-3 pt-7 sm:flex-row sm:flex-wrap">
+							<button class="btn btn-primary w-full sm:w-auto" onclick={() => goToForm({ model: m.name, intent: 'quote', position: 'tarjeta' })}>
 								Cotizar este equipo <span class="arrow" aria-hidden="true">→</span>
 							</button>
 							{#if !m.pendingSpecs}
-								<button class="btn btn-ghost-light" onclick={(e) => openSheet(m, e)} aria-haspopup="dialog">Ver ficha técnica</button>
+								<button class="btn btn-ghost-light w-full sm:w-auto" onclick={(e) => openSheet(m, e)} aria-haspopup="dialog">Ver ficha técnica</button>
 							{/if}
 						</div>
 					</div>

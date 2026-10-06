@@ -158,6 +158,7 @@
 					id="lead-name"
 					class="field field-dark"
 					autocomplete="name"
+					placeholder="Ej. María Rodríguez"
 					bind:value={name}
 					onblur={() => (touched.name = true)}
 					aria-invalid={show('name')}
