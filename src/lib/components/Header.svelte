@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { page } from '$app/state';
-	import { links } from '#lib/data';
 	import { families } from '#lib/families';
 	import { goToForm } from '#lib/lead-state.svelte';
 	import { familyUrl, homeUrl, staticUrl } from '#lib/paths';
@@ -53,9 +52,6 @@
 			</nav>
 
 			<div class="flex items-center gap-5">
-				<a href={links.support} target="_blank" rel="noopener" class="hidden text-sm text-white/60 transition-colors hover:text-white xl:inline">
-					¿Ya tienes un equipo? Soporte
-				</a>
 				<button class="btn btn-primary min-h-11 px-5 text-sm" onclick={() => goToForm({ position: 'header' })} data-magnetic>
 					Solicitar cotización
 				</button>
