@@ -24,7 +24,7 @@ export type LeadResult =
 	| { status: 'preview' }
 	| { status: 'rejected'; code: string };
 
-/** Endpoint del CRM/backend. Sin configurar, el formulario funciona en modo vista previa y lo dice. */
+/** Endpoint del CRM/backend. Sin configurar, se simula la confirmación visual del prototipo sin transmitir datos. */
 export const leadEndpoint = PUBLIC_LEAD_ENDPOINT;
 
 export async function submitLead(data: LeadPayload, formId: string, idempotencyKey: string): Promise<LeadResult> {

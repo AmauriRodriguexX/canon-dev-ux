@@ -25,3 +25,4 @@ Mantener siempre el enfoque consultivo: **"Hallazgos y oportunidades de mejora /
 - Hub (`/`): en móvil reduce márgenes, tipografía e imágenes de tarjetas para facilitar la exploración del portafolio con menos desplazamiento. En escritorio, el contenido deja aire bajo el header; el H1 ocupa el ancho y la orientación con su CTA queda debajo.
 - Landings de rollo a rollo, cama plana y técnico (`Hero.svelte`): hero de mínimo 100svh en escritorio; en móvil reduce espacios y tipografía, compacta el formulario en dos columnas e imágenes para acercar los CTA sin cambiar el orden del contenido.
 - Header: se quitó el enlace de soporte externo «¿Ya tienes un equipo? Soporte»; se conserva el botón principal «Solicitar cotización».
+- Formulario demo: sin `PUBLIC_LEAD_ENDPOINT`, se presenta una confirmación visual para enseñar el cierre del flujo; no se transmite información y `generate_lead` sigue reservado para solicitudes aceptadas por servidor.

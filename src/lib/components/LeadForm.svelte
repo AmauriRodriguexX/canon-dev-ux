@@ -124,11 +124,9 @@
 					<strong class="font-semibold text-white">{receiptId}</strong>.
 				</p>
 			{:else}
-				<h3 class="mt-5 text-2xl font-semibold">Vista previa del envío</h3>
+				<h3 class="mt-5 text-2xl font-semibold">¡Gracias por tu interés!</h3>
 				<p class="mx-auto mt-3 max-w-sm text-mist">
-					El formulario validó tus datos, pero <strong class="text-white">aún no está conectado</strong> al sistema
-					de Canon: no se envió ninguna información. Configura <code class="text-white">PUBLIC_LEAD_ENDPOINT</code>
-					para recibir solicitudes reales.
+					Un especialista Canon te ayudará a encontrar la solución adecuada para tu proyecto.
 				</p>
 			{/if}
 		</div>
