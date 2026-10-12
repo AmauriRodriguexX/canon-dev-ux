@@ -18,7 +18,7 @@
 		<div class="absolute inset-0 opacity-[0.07] [background:linear-gradient(rgb(255_255_255)_1px,transparent_1px)_0_0/100%_72px,linear-gradient(90deg,rgb(255_255_255)_1px,transparent_1px)_0_0/72px_100%] [mask-image:radial-gradient(ellipse_at_40%_40%,black,transparent_70%)]"></div>
 	</div>
 
-	<div class="container-x relative z-10 grid gap-8 pb-12 pt-8 sm:gap-12 sm:pb-16 sm:pt-12 lg:min-h-svh lg:grid-cols-12 lg:items-center lg:gap-x-10 lg:gap-y-3 lg:pt-[6rem] lg:pb-6">
+	<div class="container-x relative z-10 grid gap-8 pb-12 pt-8 sm:gap-12 sm:pb-16 sm:pt-12 lg:min-h-svh lg:grid-cols-12 lg:items-center lg:gap-x-10 lg:gap-y-3 lg:pt-24 lg:pb-6">
 		<!-- Mensaje -->
 		<div class="lg:col-span-7 lg:row-start-1">
 			<nav aria-label="Ruta" class="eyebrow text-mist" data-reveal="fade" data-now data-delay="0.05">

@@ -22,24 +22,24 @@
 		<div class="absolute inset-0 opacity-[0.07] [background:linear-gradient(rgb(255_255_255)_1px,transparent_1px)_0_0/100%_72px,linear-gradient(90deg,rgb(255_255_255)_1px,transparent_1px)_0_0/72px_100%] [mask-image:radial-gradient(ellipse_at_50%_20%,black,transparent_70%)]"></div>
 	</div>
 
-	<div class="container-x relative z-10 pt-10 pb-12 sm:pt-20 lg:flex lg:min-h-svh lg:flex-col lg:justify-center lg:pt-[6rem] lg:pb-6">
-		<div class="grid items-end gap-8 lg:grid-cols-12">
-			<div class="lg:col-span-8">
+	<div class="container-x relative z-10 pt-10 pb-12 sm:pt-20 lg:flex lg:min-h-svh lg:flex-col lg:justify-start lg:pt-28 lg:pb-6">
+		<div class="grid items-start gap-8 lg:grid-cols-12">
+			<div class="lg:col-span-12">
 				<p class="eyebrow text-mist" data-reveal="fade" data-now data-delay="0.05">
 					<span class="pps-text">Canon Production Printing</span> · Portafolio de soluciones
 				</p>
-				<h1 class="mt-4 text-[clamp(2rem,7.5vw,3rem)] leading-[1.02] font-semibold sm:mt-6 sm:text-[clamp(2.6rem,1.2rem+4.8vw,5.6rem)] lg:text-[clamp(2.4rem,3.3vw,3.75rem)]" data-reveal="lines" data-now data-delay="0.15">
+				<h1 class="mt-2 text-[clamp(2rem,7.5vw,3rem)] leading-[1.02] font-semibold sm:mt-3 sm:text-[clamp(2.6rem,1.2rem+4.8vw,5.6rem)] lg:text-[clamp(2.4rem,3.3vw,3.75rem)]" data-reveal="lines" data-now data-delay="0.15">
 					Soluciones de impresión de formato amplio
 				</h1>
-			</div>
-			<div class="lg:col-span-4" data-reveal="fade" data-now data-delay="0.5">
-				<p class="text-base leading-relaxed text-mist lg:text-lg">
+				<div class="mt-4 max-w-4xl" data-reveal="fade" data-now data-delay="0.5">
+					<p class="text-base leading-relaxed text-mist lg:text-lg">
 					Rollo a rollo, cama plana o técnico: elige por lo que necesitas imprimir. Si no estás seguro, un especialista Canon
 					te orienta.
-				</p>
-				<button class="btn btn-primary mt-6" onclick={() => goToForm({ family: '', position: 'hub-hero', intent: 'help' })} data-magnetic>
-					Hablar con un especialista <span class="arrow" aria-hidden="true">→</span>
-				</button>
+					</p>
+					<button class="btn btn-primary mt-4" onclick={() => goToForm({ family: '', position: 'hub-hero', intent: 'help' })} data-magnetic>
+						Hablar con un especialista <span class="arrow" aria-hidden="true">→</span>
+					</button>
+				</div>
 			</div>
 		</div>
 

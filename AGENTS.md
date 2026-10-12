@@ -22,5 +22,5 @@ Mantener siempre el enfoque consultivo: **"Hallazgos y oportunidades de mejora /
 
 ## Estado reciente
 - Hub (`/`): el primer bloque se ajusta a un mínimo de 100svh en escritorio; el titular y las tarjetas usan espaciados más compactos para dejar visibles los CTA de cotización en la primera pantalla.
-- Hub (`/`): en móvil reduce márgenes, tipografía e imágenes de tarjetas para facilitar la exploración del portafolio con menos desplazamiento.
+- Hub (`/`): en móvil reduce márgenes, tipografía e imágenes de tarjetas para facilitar la exploración del portafolio con menos desplazamiento. En escritorio, el contenido deja aire bajo el header; el H1 ocupa el ancho y la orientación con su CTA queda debajo.
 - Landings de rollo a rollo, cama plana y técnico (`Hero.svelte`): hero de mínimo 100svh en escritorio; en móvil reduce espacios y tipografía, compacta el formulario en dos columnas e imágenes para acercar los CTA sin cambiar el orden del contenido.
