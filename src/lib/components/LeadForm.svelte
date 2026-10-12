@@ -136,7 +136,7 @@
 		<div class="flex items-start justify-between gap-4">
 			<div>
 				<p class="eyebrow text-mist">Asesoría comercial</p>
-				<h2 id="lead-title" class="mt-2 text-[1.65rem] leading-tight font-semibold">
+				<h2 id="lead-title" class="mt-2 text-[1.65rem] leading-tight font-semibold lg:text-[1.4rem]">
 					{#if !family}
 						Habla con un especialista en formato amplio
 					{:else if helpIntent}
@@ -147,11 +147,11 @@
 				</h2>
 			</div>
 		</div>
-		<p class="mt-2 text-[0.95rem] leading-relaxed text-mist">
+		<p class="mt-2 text-[0.95rem] leading-relaxed text-mist lg:text-sm">
 			Cuéntanos qué necesitas imprimir. Un especialista te ayudará a evaluar el equipo y los siguientes pasos.
 		</p>
 
-		<div class="mt-6 grid gap-4 sm:grid-cols-2">
+		<div class="mt-6 grid gap-4 sm:grid-cols-2 lg:mt-4 lg:gap-3">
 			<div class="sm:col-span-2">
 				<label for="lead-name" class="mb-1.5 block text-sm font-medium">Nombre completo</label>
 				<input
@@ -255,7 +255,7 @@
 			{/if}
 		</div>
 
-		<div class="mt-4">
+		<div class="mt-4 lg:mt-3">
 			<button
 				type="button"
 				class="inline-flex items-center gap-2 text-left text-sm font-medium text-mist transition-colors hover:text-white"
@@ -287,7 +287,7 @@
 			</div>
 		</div>
 
-		<div class="mt-5 space-y-3 text-sm">
+		<div class="mt-5 space-y-3 text-sm lg:mt-3 lg:space-y-2">
 			<div>
 				<label class="flex items-start gap-3" for="lead-consent">
 					<input
@@ -320,14 +320,14 @@
 			</p>
 		{/if}
 
-		<button type="submit" class="btn btn-primary mt-6 w-full" disabled={status === 'sending'} data-magnetic>
+		<button type="submit" class="btn btn-primary mt-6 w-full lg:mt-4" disabled={status === 'sending'} data-magnetic>
 			{#if status === 'sending'}
 				<span class="size-4 animate-spin rounded-full border-2 border-white/40 border-t-white"></span> Enviando…
 			{:else}
 				{submitLabel} <span class="arrow" aria-hidden="true">→</span>
 			{/if}
 		</button>
-		<p class="mt-3 text-center text-xs text-mist">
+		<p class="mt-3 text-center text-xs text-mist lg:mt-2">
 			Consulta cómo tratamos tus datos en el <a class="link-u" href={links.privacy} target="_blank" rel="noopener">Aviso de Privacidad</a>.
 		</p>
 	{/if}

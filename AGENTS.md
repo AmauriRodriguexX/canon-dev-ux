@@ -1,8 +1,11 @@
 # AGENTS.md — Canon México · Formato amplio
 
-Portafolio de captación con hub (`/`) y tres familias: `/rollo-a-rollo` (Colorado), `/cama-plana` (Arizona) y `/tecnico` (imagePROGRAF TZ). Contexto y mapa de la auditoría en [README.md](./README.md). Auditoría original: `../auditoria-canon/Auditoria-UX-CRO-Canon-PPS.md`. Copias del sitio actual (fuente de contenido): `legacy/` (cama plana en `index.html`; rollo y técnico en `pages/`).
+Portafolio de captación con hub (`/`) y tres familias: `/rollo-a-rollo` (Colorado), `/cama-plana` (Arizona) y `/tecnico` (imagePROGRAF TZ). Contexto global y reglas en [../AGENTS.md](../AGENTS.md) y [README.md](./README.md). Auditoría original: `../REPORTE_AUDITORIA_CANON.md`. Copias del sitio actual (fuente de contenido): `legacy/` (cama plana en `index.html`; rollo y técnico en `pages/`).
 
-## Reglas
+## Regla de Narrativa y Tono
+Mantener siempre el enfoque consultivo: **"Hallazgos y oportunidades de mejora / optimización"** (evitar términos punitivos como "fallas", "errores" u "hostil").
+
+## Reglas Técnicas
 
 - **Usar pnpm** (`pnpm dev`, `pnpm check`, `pnpm build`). pnpm 9: `onlyBuiltDependencies` vive en `package.json` (no hay `pnpm-workspace.yaml`).
 - **GitHub Pages:** `BASE_PATH` se inyecta en el build desde `actions/configure-pages`; los enlaces y medios locales deben usar `src/lib/paths.ts` para respetar ese prefijo.
@@ -16,3 +19,7 @@ Portafolio de captación con hub (`/`) y tres familias: `/rollo-a-rollo` (Colora
 - **Cursor de mano** en todo lo clicable (regla base en `app.css`).
 - Verificar en 1440 × 900 y 390 × 844 antes de entregar.
 - Tras crear o mover rutas con `pnpm dev` encendido, reinicia el servidor: el SSR puede quedar en blanco y producir errores de hidratación falsos.
+
+## Estado reciente
+- Hub (`/`): el primer bloque se ajusta a un mínimo de 100svh en escritorio; el titular y las tarjetas usan espaciados más compactos para dejar visibles los CTA de cotización en la primera pantalla. En móvil conserva el flujo y tamaños existentes.
+- Landings de rollo a rollo, cama plana y técnico (`Hero.svelte`): hero de mínimo 100svh en escritorio, título y formulario compactos, e imagen de producto contenida para facilitar que el formulario y sus CTA queden visibles en la primera pantalla. En móvil conserva el flujo y tamaños existentes.
