@@ -22,18 +22,18 @@
 		<div class="absolute inset-0 opacity-[0.07] [background:linear-gradient(rgb(255_255_255)_1px,transparent_1px)_0_0/100%_72px,linear-gradient(90deg,rgb(255_255_255)_1px,transparent_1px)_0_0/72px_100%] [mask-image:radial-gradient(ellipse_at_50%_20%,black,transparent_70%)]"></div>
 	</div>
 
-	<div class="container-x relative z-10 pt-14 pb-20 sm:pt-20 lg:flex lg:min-h-svh lg:flex-col lg:justify-center lg:pt-[6rem] lg:pb-6">
+	<div class="container-x relative z-10 pt-10 pb-12 sm:pt-20 lg:flex lg:min-h-svh lg:flex-col lg:justify-center lg:pt-[6rem] lg:pb-6">
 		<div class="grid items-end gap-8 lg:grid-cols-12">
 			<div class="lg:col-span-8">
 				<p class="eyebrow text-mist" data-reveal="fade" data-now data-delay="0.05">
 					<span class="pps-text">Canon Production Printing</span> · Portafolio de soluciones
 				</p>
-				<h1 class="mt-6 text-[clamp(2.6rem,1.2rem+4.8vw,5.6rem)] leading-[0.98] font-semibold lg:text-[clamp(2.4rem,3.3vw,3.75rem)]" data-reveal="lines" data-now data-delay="0.15">
+				<h1 class="mt-4 text-[clamp(2rem,7.5vw,3rem)] leading-[1.02] font-semibold sm:mt-6 sm:text-[clamp(2.6rem,1.2rem+4.8vw,5.6rem)] lg:text-[clamp(2.4rem,3.3vw,3.75rem)]" data-reveal="lines" data-now data-delay="0.15">
 					Soluciones de impresión de formato amplio
 				</h1>
 			</div>
 			<div class="lg:col-span-4" data-reveal="fade" data-now data-delay="0.5">
-				<p class="text-lg leading-relaxed text-mist">
+				<p class="text-base leading-relaxed text-mist lg:text-lg">
 					Rollo a rollo, cama plana o técnico: elige por lo que necesitas imprimir. Si no estás seguro, un especialista Canon
 					te orienta.
 				</p>
@@ -43,18 +43,18 @@
 			</div>
 		</div>
 
-		<ul class="mt-14 grid gap-4 lg:mt-7 lg:grid-cols-3" data-reveal="fade" data-now data-delay="0.35">
+		<ul class="mt-10 grid gap-3 sm:gap-4 lg:mt-7 lg:grid-cols-3" data-reveal="fade" data-now data-delay="0.35">
 			{#each families as f (f.slug)}
 				<li class="spot group relative flex flex-col overflow-hidden rounded-[1.75rem] border border-white/10 bg-gradient-to-b from-white/[0.08] to-white/[0.02] backdrop-blur-xl transition-colors duration-500 hover:border-white/25 lg:min-h-0">
-					<div class="relative px-6 pt-7 sm:px-8 lg:pt-5">
+					<div class="relative px-5 pt-5 sm:px-8 sm:pt-7 lg:pt-5">
 						<div class="flex items-center justify-between">
 							<span class="eyebrow text-mist">{f.series}</span>
 							<span class="rounded-full bg-white/10 px-3 py-1 text-xs text-white/80">{highlight[f.slug].label} · {highlight[f.slug].value}</span>
 						</div>
-						<h2 class="mt-4 text-3xl font-semibold sm:text-4xl lg:mt-3 lg:text-2xl xl:text-3xl">{f.name}</h2>
-						<p class="mt-2 text-mist lg:text-sm">{f.forWhat}</p>
+						<h2 class="mt-3 text-2xl font-semibold sm:mt-4 sm:text-4xl lg:mt-3 lg:text-2xl xl:text-3xl">{f.name}</h2>
+						<p class="mt-2 text-sm text-mist sm:text-base lg:text-sm">{f.forWhat}</p>
 					</div>
-					<div class="relative mt-6 flex-1 px-6 lg:mt-3">
+					<div class="relative mt-4 flex-1 px-5 sm:mt-6 sm:px-6 lg:mt-3">
 						<div aria-hidden="true" class="absolute inset-x-[12%] bottom-[10%] h-8 rounded-[50%] bg-black/70 blur-xl"></div>
 						<img
 							src={staticUrl(cardImage[f.slug])}
@@ -62,10 +62,10 @@
 							width="882"
 							height="415"
 							loading="eager"
-							class="relative mx-auto w-full max-w-[24rem] transition-transform duration-[1400ms] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:-translate-y-2 group-hover:scale-[1.04] lg:max-h-36 lg:object-contain"
+							class="relative mx-auto w-full max-h-32 max-w-[24rem] object-contain transition-transform duration-[1400ms] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:-translate-y-2 group-hover:scale-[1.04] sm:max-h-none lg:max-h-36"
 						/>
 					</div>
-					<div class="relative z-10 flex flex-wrap gap-3 px-6 pt-4 pb-7 sm:px-8 lg:pt-3 lg:pb-5">
+					<div class="relative z-10 flex flex-wrap gap-2 px-5 pt-3 pb-4 sm:gap-3 sm:px-8 sm:pt-4 sm:pb-7 lg:pt-3 lg:pb-5">
 						<a href={familyUrl(f.slug)} class="btn btn-ghost-dark flex-1">Ver equipos</a>
 						<button class="btn btn-primary flex-1" onclick={() => goToForm({ family: f.slug, model: '', position: `hub-card-${f.slug}`, intent: 'quote' })}>
 							Cotizar
